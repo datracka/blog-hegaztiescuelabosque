@@ -1,6 +1,6 @@
 ---
-import Layout from '../layouts/Layout.astro';
 import { metaTagsFragment, responsiveImageFragment } from "../lib/fragments";
+import Layout from "../components/layout";
 
 const graphqlRequest = {
   query: `
@@ -63,3 +63,9 @@ const posts = parsedResponse.data.allPosts
 const heroPost = posts.shift()
 const morePosts = posts
 ---
+
+<>
+<Layout preview={false} currentSlug={""}>
+	<p>hello world!</p>
+</Layout>
+</>
