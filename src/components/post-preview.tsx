@@ -1,19 +1,14 @@
 import Avatar from "./avatar";
 import Date from "./date";
-import CoverImage from "./cover-image";
+import CoverImage, { CoverImagesProps} from "./cover-image";
+import type { AuthorProps } from "../common";
 
 export type PostPreviewProps = {
     title: string;
-    coverImage: {
-        responsiveImage: {
-        };
-    };
+    coverImage: CoverImagesProps;
     date: string;
     excerpt: string;
-    author: {
-        name: string;
-        picture: string;
-    };
+    author: AuthorProps;
     slug: string;
     preview: boolean;
 };

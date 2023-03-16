@@ -1,16 +1,14 @@
 import Avatar from "./avatar";
 import Date from "./date";
 import CoverImage from "./cover-image";
+import type { AuthorProps } from "../common";
 
 type Props = {
     title: string;
     coverImage: any;
     date: string;
     excerpt: string;
-    author: {
-          name: string;
-          picture: string;  
-    },
+    author: AuthorProps,
     slug: string;
     preview: boolean;
 }
