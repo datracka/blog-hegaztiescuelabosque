@@ -2,16 +2,16 @@ import Avatar from "./avatar";
 import Date, { DateProps } from "./date";
 import CoverImage, {CoverImagesProps } from "./cover-image";
 import PostTitle, { PostTitleProps} from "./post-title";
+import type { AuthorProps } from "../common";
 
 type PostHeaderProps = {
     title: string;
     coverImage: CoverImagesProps;
     date: DateProps;
-
-
+    author: AuthorProps;
 }
 
-export default function PostHeader({ title, coverImage, date, author }) {
+export default function PostHeader({ title, coverImage, date, author }: PostHeaderProps) {
   return (
     <>
       <PostTitle>{title}</PostTitle>
