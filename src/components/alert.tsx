@@ -19,25 +19,25 @@ export default function Alert({ preview, currentSlug }: Props) {
         <div className="py-2 text-center text-sm">
           {preview ? (
             <>
-              This is page is showing draft content.{" "}
+              Esta página muestra contenido no publicado.{" "}
               <a
                 href={currentSlug}
                 className="underline hover:text-cyan duration-200 transition-colors"
               >
-                Click here
+                click aqui
               </a>{" "}
-              to exit preview mode.
+              para salir del modo de prevista.
             </>
           ) : (
             <>
-              This is page is showing published content.{" "}
+              Esta página muestra contenido público.{" "}
               <a
                 href={`/preview/${currentSlug}`}
                 className="underline hover:text-cyan duration-200 transition-colors"
               >
-                Click here
+                click aqui
               </a>{" "}
-              to enter preview mode!
+              para entrar en modo de prevista!
             </>
           )}
         </div>
